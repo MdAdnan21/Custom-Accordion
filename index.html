@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <title>Accordion</title>
+    </head>
+    <body>
+        <section class="accordion container">
+            <div class="accordion__container">
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">What's an accordion?</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            An accordion always contains the category title, an expanded and a collapsed state, 
+                            an icon indicating expansion, and the spacing between them.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">When and how should it be used?</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            It should be used when users only need a few key concepts or descriptions 
+                            of the content on a single page.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">What happens if the user clicks on a collapsed card while another card is open?</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            It happens that the open card was closed, to give way to the information of the next 
+                            open card, but there are different designs that prefer it the other way around.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <header class="accordion__header">
+                        <i class='bx bx-plus accordion__icon'></i>
+                        <h3 class="accordion__title">How to choose an icon to indicate expansion?</h3>
+                    </header>
+    
+                    <div class="accordion__content">
+                        <p class="accordion__description">
+                            You must choose a different icon to open and close, so that the user 
+                            understands what action he took.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== MAIN JS ===============-->
+        
+       
+        <div class="container col-4 mb-5">
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" >Id</label>
+                <input type="email" class="form-control"  placeholder="ID">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="email" class="form-control"   id="name1" placeholder="ENTER NAME">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label" >Email</label>
+                <input type="email" class="form-control" id="email1" placeholder="ENTER EMAIL">
+            </div>
+           
+            <button class="btn btn-success" onclick="postapi()">POST</button>
+            <button class="btn btn-danger">EDIT</button>
+        </div>
+
+        <div>
+            <table class="table table-striped"  id="table1">
+                
+                <tr>
+
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>EMAIL</th>
+                    
+                </tr>
+                </table>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="/index.js"></script>
+    </body>
+</html>

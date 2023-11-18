@@ -1,0 +1,22 @@
+{
+  "posts1": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "email": "typicode"
+    },
+    {
+      "name": "dsafsa",
+      "email": "sdfadsfdasf",
+      "id": 2
+    },
+    {
+      "name": "adf",
+      "email": "asdfasdf",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
